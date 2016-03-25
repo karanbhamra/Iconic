@@ -17,6 +17,7 @@ namespace ImageResizer
             InitializeComponent();
             label1.ForeColor = Color.Red;
             label1.Text = "No file selected.";
+            button1.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace ImageResizer
                 Image image = Image.FromFile(openFileDialog.FileName);
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Image = image;
+                button1.Enabled = true;
 
             }
         }
