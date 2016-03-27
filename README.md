@@ -1,5 +1,5 @@
 # Iconic
-Iconic generates icons of all sizes.
+Iconic generates icons of various sizes.
 
 
 Author
