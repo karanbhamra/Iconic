@@ -23,7 +23,7 @@ namespace ImageResizer
             label1.MaximumSize = new Size(550, 0);
             //button1.ForeColor = Color.Green;
             //button1.BackColor = Color.Orange;
-            button2.BackColor = Color.LightSeaGreen;
+            button2.BackColor = Color.DodgerBlue;
 
         }
 
@@ -38,7 +38,7 @@ namespace ImageResizer
             if (dr == DialogResult.OK)
             {
                 //Console.WriteLine("TEST");
-                label1.Text = "File: " + openFileDialog.FileName + " is selected.";
+                label1.Text = "File: " + openFileDialog.FileName + " is selected and ready.";
                 label1.ForeColor = Color.Green;
                 Image image = Image.FromFile(openFileDialog.FileName);
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
